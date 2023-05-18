@@ -1,5 +1,6 @@
 import useMediaQuery from "@/hooks/useScreenSize";
 import useScreenWidth from "@/hooks/useScreenWidth";
+import { MdHeader, SmHeader, XsHeader } from "./header";
 
 function NavBar() {
   const flexBetween = "flex justify-center items-center";
@@ -12,17 +13,19 @@ function NavBar() {
   return (
     <nav>
       {(() => {
-        if (size <= 300) {
+        if (size <= 480) {
           return (
-            <div>someCase 300</div>
+            <>
+            <XsHeader />
+            </>
           )
-        } else if (size > 300 && size <= 768) {
+        } else if (size > 480 && size <= 768) {
           return (
-            <div>otherCase 768</div>
+            <SmHeader />
           )
         } else {
           return (
-            <div>catch 768 above</div>
+            <MdHeader />
           )
         }
       })()}
