@@ -1,9 +1,10 @@
 import useScreenWidth from "@/hooks/useScreenWidth";
+import { SelectedPage } from "@/shared/types";
 import { MdHeader, SmHeader, XsHeader } from "./header";
 
 type Props = {
-  selectedPage:string,
-  setSelectedPage:(value:string) => void,
+  selectedPage:SelectedPage,
+  setSelectedPage:(value:SelectedPage) => void,
 }
 
 function NavBar({selectedPage, setSelectedPage}:Props) {
