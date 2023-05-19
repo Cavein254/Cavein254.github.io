@@ -1,10 +1,11 @@
 import Logo from '@/assets/logo.png'
+import { SelectedPage } from '@/shared/types'
 import { Bars3Icon } from "@heroicons/react/24/solid"
 import Link from './Link'
 
 type Props = {
-    selectedPage:string,
-    setSelectedPage:(value:string) => void,
+    selectedPage:SelectedPage,
+    setSelectedPage:(value:SelectedPage) => void,
 }
   
 export const XsHeader = () => {
