@@ -1,14 +1,16 @@
-import useMediaQuery from "@/hooks/useScreenSize";
 import useScreenWidth from "@/hooks/useScreenWidth";
+import { SelectedPage } from "@/shared/types";
 import { MdHeader, SmHeader, XsHeader } from "./header";
 
-function NavBar() {
-  const flexBetween = "flex justify-center items-center";
-  const isAboveSmallScreen = useMediaQuery("(min-width:480px)");
-  const isAboveMediumScreen = useMediaQuery("(min-width:768px)");
-  const screen = window.screen.width;
+type Props = {
+  selectedPage:SelectedPage,
+  setSelectedPage:(value:SelectedPage) => void,
+}
+
+function NavBar({selectedPage, setSelectedPage}:Props) {
+
   
-  const size = useScreenWidth();
+  const size:number = useScreenWidth();
   
   return (
     <nav>
@@ -21,11 +23,11 @@ function NavBar() {
           )
         } else if (size > 480 && size <= 768) {
           return (
-            <SmHeader />
+            <SmHeader selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
           )
         } else {
           return (
-            <MdHeader />
+            <MdHeader selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
           )
         }
       })()}
