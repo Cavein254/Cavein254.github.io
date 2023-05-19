@@ -24,7 +24,7 @@ export const NavigationLinks = ({selectedPage, setSelectedPage}:Props) => {
             setSelectedPage={setSelectedPage}
             />
             <Link 
-            page="Contracts"
+            page="Contacts"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
             />

@@ -11,7 +11,7 @@ type Props = {
 
   
 export const XsHeader = ({setSelectedPage, selectedPage}:Props) => {
-    const [isMenuToggled, setIsMenuToggled] = useState<boolean>(true);
+    const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (
     <div className='flex justify-between items-center my-6 mx-4 '>
             <img src={Logo} alt='logo' className='w-[35%]'/>
@@ -19,7 +19,7 @@ export const XsHeader = ({setSelectedPage, selectedPage}:Props) => {
             <Bars3Icon className='w-[1.8rem]' onClick={()=> setIsMenuToggled(!isMenuToggled)}/>
         </div>
         {isMenuToggled && (
-                <div className='fixed -right-[1.5rem] bottom-0 z-40 h-full w-full bg-primary-100 drop-shadow-xl pt-4 mx-6 px-8'>
+                <div className='fixed right-0 bottom-0 z-40 h-full w-full bg-primary-100 pt-6 mx-4 px-6'>
                     <div className='flex justify-between items-center'>
                         <img src={Logo} alt='logo' className='w-[35%]'/>
                         <div>
@@ -28,7 +28,7 @@ export const XsHeader = ({setSelectedPage, selectedPage}:Props) => {
                             </button>
                         </div>
                     </div>
-                    <div>
+                    <div className='flex flex-col justify-center items-center pt-[40%] gap-8 text-3xl'>
                         <NavigationLinks selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                     </div>
                 </div>
