@@ -1,10 +1,15 @@
 import useScreenWidth from "@/hooks/useScreenWidth";
 import { MdHeader, SmHeader, XsHeader } from "./header";
 
-function NavBar() {
+type Props = {
+  selectedPage:string,
+  setSelectedPage:(value:string) => void,
+}
+
+function NavBar({selectedPage, setSelectedPage}:Props) {
 
   
-  const size = useScreenWidth();
+  const size:number = useScreenWidth();
   
   return (
     <nav>
@@ -17,11 +22,11 @@ function NavBar() {
           )
         } else if (size > 480 && size <= 768) {
           return (
-            <SmHeader />
+            <SmHeader selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
           )
         } else {
           return (
-            <MdHeader />
+            <MdHeader selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
           )
         }
       })()}
