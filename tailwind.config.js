@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -21,6 +22,9 @@ export default {
         xs:"480px",
         sm:"768px",
         md:"1060px",
+      },
+      backgroundImage:{
+        logo: "url('@/assets/code.png')"
       }
     },
   },
