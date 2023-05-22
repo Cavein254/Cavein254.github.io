@@ -26,7 +26,7 @@ const Home = () => {
         <div className="flex justify-center items-center sm:justify-end ">
           <img src={ImageLogo} alt="spinner" className="w-[20%] sm:w-[40%] "/>
         </div>
-        <div className="px-16 pt-8">
+        <div id="aboutme" className="px-16 pt-8">
           <p>A few years ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
         </div>
       </div>

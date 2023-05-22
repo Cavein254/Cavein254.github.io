@@ -1,4 +1,3 @@
-import Card from "@/assets/card_portfolio.png"
 
 type Data = {
     id:number,
@@ -8,9 +7,7 @@ type Data = {
     pic:string
   }
 
-const Item = ({data}: Data) => {
-    console.log("print description")
-    console.log(data.description)
+const Item = ({item}) => {
   return (
     <>
     <div>
@@ -25,7 +22,7 @@ const Item = ({data}: Data) => {
                 <p className="text-center font-thin">HTML, CSS, JS</p>
             </div>
             <div className="px-4">
-                <p>{data.description}</p>
+                <p>{item.description}</p>
             </div>
             <div className="flex justify-center items-center">
             <button className="px-8 py-4 bg-primary-400 rounded-md ">
@@ -34,7 +31,7 @@ const Item = ({data}: Data) => {
             </div>
         </div>
         <div className="flex justify-center">
-            <img src={Card} />
+            <img src={item.pic} />
         </div>
     </div>
     </>

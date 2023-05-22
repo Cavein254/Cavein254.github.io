@@ -1,10 +1,8 @@
 import Logo from '@/assets/logo.png'
 
-type Props = {}
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
-    <div>
+    <div id='contacts'>
         <div className='flex justify-center items-center flex-col pt-8'>
             <img src={Logo} alt='logo' className='w-[40%]'/>
             <div className='px-16'>

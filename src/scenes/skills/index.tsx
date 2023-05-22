@@ -3,7 +3,7 @@ type Props = {}
 
 const Skills = (props: Props) => {
   return (
-    <div>
+    <div id="skills">
       <div className="text-secondary-200 text-[2rem] font-bold text-center ">
         My Skills
       </div>
