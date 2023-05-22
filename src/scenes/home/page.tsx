@@ -1,9 +1,8 @@
 import ImageLogo from "@/assets/imagelogo.png"
 import Image from "@/assets/myimage.png"
 
-type Props = {}
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <>
     <section>
