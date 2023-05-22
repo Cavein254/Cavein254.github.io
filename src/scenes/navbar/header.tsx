@@ -28,8 +28,8 @@ export const XsHeader = ({setSelectedPage, selectedPage}:Props) => {
                             </button>
                         </div>
                     </div>
-                    <div className='flex flex-col justify-center items-center pt-[40%] gap-8 text-3xl'>
-                        <NavigationLinks selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                    <div className='flex flex-col justify-center items-center pt-[40%] gap-8 text-3xl' onClick={()=> setIsMenuToggled(!isMenuToggled)}>
+                        <NavigationLinks selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                     </div>
                 </div>
             )}
