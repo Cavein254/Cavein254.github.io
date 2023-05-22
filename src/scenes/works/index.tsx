@@ -1,15 +1,6 @@
 import { data } from "./data"
 import Item from "./items"
 
-type ItemData = {
-  id:number,
-  technologies:[],
-  url:string,
-  description:string,
-  pic:string
-}
-
-
 const Works = () => {
   return (
     <div  id="projects">

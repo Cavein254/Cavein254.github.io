@@ -1,7 +1,5 @@
 
-type Props = {}
-
-const Skills = (props: Props) => {
+const Skills = () => {
   return (
     <div id="skills">
       <div className="text-secondary-200 text-[2rem] font-bold text-center ">

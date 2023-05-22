@@ -18,7 +18,7 @@ function NavBar({selectedPage, setSelectedPage}:Props) {
         if (size <= 480) {
           return (
             <>
-            <XsHeader />
+            <XsHeader selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             </>
           )
         } else if (size > 480 && size <= 768) {

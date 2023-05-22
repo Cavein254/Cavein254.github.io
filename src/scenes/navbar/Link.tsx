@@ -9,6 +9,7 @@ type Props = {
 
 const Link = ({page, selectedPage, setSelectedPage}:Props) => {
     const lowerCasePage = page.toLocaleLowerCase().replace(/ /g,"") as SelectedPage;
+    console.log(selectedPage)
   return (
     <AnchorLink
     href={`#${lowerCasePage}`}
