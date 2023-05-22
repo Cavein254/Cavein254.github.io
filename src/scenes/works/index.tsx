@@ -4,6 +4,9 @@ import Item from "./items"
 const Works = () => {
   return (
     <div  id="projects">
+      <div>
+        <h4 className="text-secondary-200 text-[2rem] font-bold text-center">My Works</h4>
+    </div>
       {
         data.map((item) => {
           return (

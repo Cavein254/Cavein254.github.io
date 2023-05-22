@@ -39,7 +39,7 @@ export const XsHeader = ({setSelectedPage, selectedPage}:Props) => {
 
 export const SmHeader = ({selectedPage, setSelectedPage}:Props) => {
     return (
-        <div className='flex flex-col justify-center items-center my-6'>
+        <div className='flex flex-col justify-center items-center my-6 '>
          <img src={Logo} alt='logo' className='w-[35%]'/>
          <div className='flex justify-around w-full pt-2'>
          <NavigationLinks selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
@@ -51,8 +51,8 @@ export const SmHeader = ({selectedPage, setSelectedPage}:Props) => {
 export const MdHeader = ({selectedPage, setSelectedPage}:Props) => {
     return (
         <>
-        <div className='flex my-6 justify-between mx-4'>
-            <img src={Logo} alt='logo' className='w-[15%]'/>
+        <div className='flex my-6 justify-between mx-4 '>
+            <img src={Logo} alt='logo' className='w-[35%] max-w-[180px]'/>
         <div className='flex gap-4'>
         <NavigationLinks selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
         </div>

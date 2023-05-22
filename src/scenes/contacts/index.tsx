@@ -12,8 +12,8 @@ const Contact = () => {
             </div>
         </div>
         <div>
-            <h1 className='text-2xl font-bold text-secondary-200 text-center'>Contacts</h1>
-            <div className='text-secondary-200 px-16 flex justify-center items-center flex-col gap-2' >
+            <h4 className='text-secondary-200 text-[2rem] font-bold text-center'>Contacts</h4>
+            <div className='text-secondary-200 px-16 flex justify-center items-center flex-col gap-2 sm:flex-row sm:justify-around' >
                 <div >
                     <p>Github</p>
                     <p>Twitter</p>
