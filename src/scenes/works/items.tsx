@@ -1,5 +1,6 @@
 
 const Item = ({item}:any) => {
+    
   return (
     <>
     
@@ -9,7 +10,11 @@ const Item = ({item}:any) => {
                 <h5 className="text-secondary-200 text-center font-bold ">{item.title}</h5>
             </div>
             <div>
-                <p className="text-center font-thin">HTML, CSS, JS</p>
+                <p className="text-center font-thin">
+                    {
+                        
+                    }
+                </p>
             </div>
             <div className="px-4">
                 <p>{item.description}</p>
