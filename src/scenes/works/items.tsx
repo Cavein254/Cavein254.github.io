@@ -1,4 +1,4 @@
-
+import CardOne from '@/assets/card_portfolio.png'
 const Item = ({item}:any) => {
     
   return (
@@ -26,7 +26,7 @@ const Item = ({item}:any) => {
             </div>
         </div>
         <div className="flex justify-center">
-            <img src={item.pic} />
+            <img src={CardOne} />
         </div>
     </div>
     </>
