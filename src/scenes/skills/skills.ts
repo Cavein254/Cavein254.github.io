@@ -16,7 +16,7 @@ export const skills = [
     {
         id:2,
         icon:Mongo,
-        name:"Mongo"
+        name:"Mongo DB"
     },
     {
         id:3,
