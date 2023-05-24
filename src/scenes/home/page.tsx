@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
     <section>
-      <div className="md:flex mt-[15%] ">
+      <div className="md:flex mt-[15%] md:mt-[8%]">
         <div className="flex justify-center items-center  mx-auto">
           <div className="flex justify-center items-left flex-col m-6">
             <h1 className="text-[2.5rem] text-secondary-200 font-extrabold">John Muthua</h1>
