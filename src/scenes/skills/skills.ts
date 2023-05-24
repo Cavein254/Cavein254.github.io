@@ -11,41 +11,41 @@ export const skills = [
     {
         id:1,
         icon:Docker,
-        name:Docker
+        name:"Docker"
     },
     {
         id:2,
         icon:Mongo,
-        name:Mongo
+        name:"Mongo"
     },
     {
         id:3,
         icon:Next,
-        name:Next
+        name:"Next"
     },
     {
         id:4,
         icon:Prisma,
-        name:Prisma
+        name:"Prisma"
     },
     {
         id:5,
         icon:Python,
-        name:Python
+        name:"Python"
     },
     {
         id:6,
         icon:React,
-        name:React
+        name:"React"
     },
     {
         id:7,
         icon:Rust,
-        name:Rust
+        name:"Rust"
     },
     {
         id:8,
         icon:Ts,
-        name:Ts
+        name:"Ts"
     }
 ]
