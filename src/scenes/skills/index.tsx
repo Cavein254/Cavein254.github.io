@@ -1,18 +1,19 @@
-import Skill from "./skill"
+import { skills } from './skills'
 
-const Skills = () => {
+const Skill = () => {
+  const all = skills.map(item => {
+    return (
+      <div key={item.id}>
+      <img src={item.icon} alt='docker w-[100px]' />
+      <p className='text-[2rem] text-slate-300 font-thin'>Docker</p>
+    </div>
+    )
+  })
   return (
-    <div id="skills">
-      <div className="text-secondary-200 text-[2rem] font-bold text-center mx-[10%] gap-4 flex flex-col">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-      </div>
-      
+    <div className="bg-primary-200 py-4 px-2 rounded-md flex justify-center items-center">
+      {all}
     </div>
   )
 }
 
-export default Skills
+export default Skill
