@@ -11,7 +11,7 @@ const Home = () => {
           <div className="flex justify-center items-left flex-col m-6">
             <h1 className="text-[2.5rem] text-secondary-200 font-extrabold">John Muthua</h1>
             <h3 className="font-bold text-[1.5rem]">FullStack Web Developer</h3>
-            <h6 className="text-[1.2rem] font-light">A fullstack developer delivering quality products to clients</h6>
+            <h6 className="text-[1.2rem] font-light">Building End-to-End Web Solutions for Seamless Digital Experiences</h6>
           </div>
         </div>
         <div className="flex justify-center items-center bg-logo bg-no-repeat mx-auto bg-center bg-containgit">
@@ -27,7 +27,7 @@ const Home = () => {
           <img src={ImageLogo} alt="spinner" className="w-[20%] sm:w-[40%] "/>
         </div>
         <div id="aboutme" className="px-16 pt-8">
-          <p>A few years ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
+          <p>Whether it's designing robust architectures, writing clean and maintainable code, or optimizing application performance, I am dedicated to delivering exceptional results. I thrive in challenging environments and embrace new challenges that push the boundaries of my skills.</p>
         </div>
       </div>
     </section>
