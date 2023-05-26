@@ -1,11 +1,10 @@
-
 const Item = ({item}:any) => {
     
   return (
     <>
     
-    <div>
-        <div className="px-4 py-2 bg-primary-200 rounded-md mx-6">
+    <div className="w-[75%]  mx-auto">
+        <div className="px-4 py-2 bg-primary-200 rounded-md">
             <div>
                 <h5 className="text-secondary-200 text-center font-bold ">{item.title}</h5>
             </div>

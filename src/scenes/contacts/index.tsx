@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div id='contacts'>
         <div className='flex justify-center items-center flex-col pt-8'>
-            <img src={Logo} alt='logo' className='w-[40%]'/>
+            <img src={Logo} alt='logo' className='w-[200px] sm:w-[250px]'/>
             <div className='px-16'>
                 <p>
                 If you liked my work and you need me, I'm ready to talk to you.
