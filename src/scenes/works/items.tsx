@@ -25,7 +25,7 @@ const Item = ({item}:any) => {
             </div>
         </div>
         <div className="flex justify-center">
-            <img src={item.pic} />
+            <img src={item.pic} alt="Project image"/>
         </div>
     </div>
     </>
