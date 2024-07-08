@@ -1,21 +1,21 @@
-import { data } from "./data"
-import Item from "./items"
+import { data } from "./data";
+import Item from "./items";
 
 const Works = () => {
   return (
-    <div  id="projects" className="pt-8 mb-4">
+    <div id="projects" className="mb-4 pt-8">
       <div>
-        <h4 className="text-secondary-200 text-[2rem] font-bold text-center">My Works</h4>
+        <h4 className="text-center text-[2rem] font-bold text-secondary-200">
+          My Works
+        </h4>
+      </div>
+      <div className="flex flex-col gap-2 md:flex-row md:flex-wrap">
+        {data.map((item) => {
+          return <Item item={item} key={item.id} />;
+        })}
+      </div>
     </div>
-      {
-        data.map((item) => {
-          return (
-            <Item item={item} key={item.id}/>
-          )
-        })
-      }
-    </div>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;
